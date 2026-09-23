@@ -16,19 +16,31 @@
 
 	<developers>
 		<developer>
-			<id>Eduardo-Leite7</id>
-			<name>Eduardo Leite Ribeiro</name>
-			<email>duduleiteriveiro@gmail.com</email>
+			<id>Diogo1821</id>
+			<name>Diogo Sena Salvador</name>
+			<email>diogo.ssalvador@senacsp.edu.br</email>
+		</developer>
+		<developer>
+			<id>i-antonio</id>
+			<name>Antonio Augusto</name>
+			<email>antonio.acoliveira@senacsp.edu.br</email>
 		</developer>
 	</developers>
-	<!-- Versão do TADS Spring Initializr: 1.1.7 -->
-	<!-- hash-identificacao: 11d65592e16f0c97b9664810e27f19f94e3c24f2a86abf64c883168c6cfc805c -->
+	<!-- Versão do TADS Spring Initializr: 1.1.8 -->
+	<!-- hash-identificacao: 7ee5f4fc6e703f0077a2a15f90c775823337a05639a75b65e99a21763b4895fe -->
 
 	<properties>
 		<java.version>21</java.version>
 	</properties>
 
 	<dependencies>
+	
+		<dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-databind</artifactId>
+    		<version>2.20.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc</artifactId>
@@ -63,14 +75,11 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.8.13</version>
-		</dependency>
-
-
+		 <dependency>
+      		<groupId>org.springdoc</groupId>
+      		<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      		<version>3.1.1</version>
+   		</dependency>
 	</dependencies>
 
 	<build>
