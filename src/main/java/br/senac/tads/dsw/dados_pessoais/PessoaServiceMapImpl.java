@@ -46,7 +46,7 @@ public class PessoaServiceMapImpl implements PessoaService {
     }
 
 	@Override
-	public PessoaDto alteraPessoa(String username, PessoaAlteracaoDto pessoaAlteracaoDto) {
+	public PessoaDto alterarPessoa(String username, PessoaAlteracaoDto pessoaAlteracaoDto) {
 		if (!mapPessoas.containsKey(username)) {
 			throw new NaoEncontradoException("Pessoa " + username + " não encontrada");
 		}
