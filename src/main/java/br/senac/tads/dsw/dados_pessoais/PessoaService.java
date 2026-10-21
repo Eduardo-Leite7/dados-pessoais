@@ -1,4 +1,4 @@
-package br.senac.tads.dsw.dadospessoais;
+package br.senac.tads.dsw.dados_pessoais;
 
 import java.util.List;
 import java.util.Optional;
