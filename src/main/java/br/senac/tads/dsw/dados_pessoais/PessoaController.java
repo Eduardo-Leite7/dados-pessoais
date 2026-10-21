@@ -28,9 +28,9 @@ import jakarta.validation.Valid;
 @RequestMapping("/pessoas")
 public class PessoaController {
 
-    private final PessoaService pessoaService;
+    private final PessoaServiceMapImpl pessoaService;
 
-    private PessoaController (PessoaService pessoaService) {
+    private PessoaController (PessoaServiceMapImpl pessoaService) {
         this.pessoaService = pessoaService;
     }
 
