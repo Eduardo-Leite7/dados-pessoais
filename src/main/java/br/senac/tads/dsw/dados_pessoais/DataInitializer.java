@@ -56,6 +56,7 @@ public class DataInitializer implements CommandLineRunner {
 			p1.getConhecimentos().add(mapConhecimentos.get("SQL"));
 			p1.getConhecimentos().add(mapConhecimentos.get("Docker"));
 			pessoaRepository.save(p1);
+
 			PessoaEntity p2 = new PessoaEntity();
 			p2.setUsername("ironman");
 			p2.setNome("Tony Stark");
@@ -68,6 +69,8 @@ public class DataInitializer implements CommandLineRunner {
 			p2.getConhecimentos().add(mapConhecimentos.get("HTML"));
 			p2.getConhecimentos().add(mapConhecimentos.get("CSS"));
 			pessoaRepository.save(p2);
+
+
 			PessoaEntity p3 = new PessoaEntity();
 			p3.setUsername("eleven");
 			p3.setNome("Eleven Hopper");
