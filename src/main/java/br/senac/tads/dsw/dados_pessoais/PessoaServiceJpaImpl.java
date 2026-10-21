@@ -84,7 +84,7 @@ public class PessoaServiceJpaImpl implements PessoaService {
 
 	@Override
 	@Transactional(readOnly = true)    // readOnly = true: otimiza leituras (sem necessidade de flush)
-	public List<PessoaDto> obterTodos() {
+	public List<PessoaDto> obterPessoas() {
 		// Versão imperativa — veja o Anexo A para a versão equivalente com streams
 		List<PessoaDto> resultado = new ArrayList<>();
 		for (PessoaEntity entity : pessoaRepository.findAll()) {
