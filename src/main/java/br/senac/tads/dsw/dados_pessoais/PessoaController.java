@@ -76,7 +76,7 @@ public class PessoaController {
 
 	@PutMapping("/{username}")
 	public ResponseEntity<?> atualizar(@PathVariable("username") String username, @RequestBody @Valid PessoaAlteracaoDto pessoa) {
-		PessoaDto pessoaDtoAlterada = pessoaService.alteraPessoa(username, pessoa);
+		PessoaDto pessoaDtoAlterada = pessoaService.alterarPessoa(username, pessoa);
 		return ResponseEntity.ok().body(pessoaDtoAlterada);
 	}
 

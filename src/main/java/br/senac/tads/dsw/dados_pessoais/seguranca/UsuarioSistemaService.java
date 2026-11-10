@@ -57,7 +57,7 @@ public class UsuarioSistemaService implements UserDetailsService {
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		UserDetails usuario = usuarios.get(username);
 		if (usuario == null) {
-			throw new UsernameNotFoundException("Usuário não encontrado" + username);
+			throw new UsernameNotFoundException("Usuário não encontrado: " + username);
 		}
 		return usuario;
 	}

@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>4.1.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>br.senac.tads.dsw</groupId>
 	<artifactId>dados-pessoais</artifactId>
@@ -99,6 +99,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!-- OAuth2 Resource Server: inclui a biblioteca Nimbus JOSE+JWT usada pelo JwtService -->
+		<!-- Spring Boot 4: o starter foi renomeado (antes: spring-boot-starter-oauth2-resource-server) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security-oauth2-resource-server</artifactId>
 		</dependency>
 
 	</dependencies>
